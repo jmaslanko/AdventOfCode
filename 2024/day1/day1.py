@@ -2,7 +2,7 @@
 
 left_list = []
 right_list = []
-with open("/Users/Jeremy/Documents/GitHub/AdventOfCode/2024/day1/data.csv", "r") as f:
+with open("/Users/Jeremy/Documents/GitHub/AdventOfCode/2024/day1/data.txt", "r") as f:
     for line in f:
         output = line.split()
         left_list.append(int(output[0]))
