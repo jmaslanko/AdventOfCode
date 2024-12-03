@@ -26,24 +26,4 @@ def is_safe(report: list) -> bool:
     else:
         return False
 
-def main(data: list):
-    safe_floors_one = 0
-    safe_floor_two = 0
-    for row in data:
-        if is_safe(row):
-            safe_floors_one += 1
-        else:
-            for i in range(len(row)):
-                new = row[:i] + row[i+1:]
-                if is_safe(new):
-                    safe_floor_two += 1
-                    break
-
-    print(f"Part one: {safe_floors_one}")
-    print(f"Part two: {safe_floor_two+safe_floors_one}")
-
-
-
-if __name__ == "__main__":
-    data = get_data("/Users/Jeremy/Documents/GitHub/AdventOfCode/2024/day2/data.txt")
-    main(data)
+def 
